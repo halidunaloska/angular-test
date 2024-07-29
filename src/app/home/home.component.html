@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<h2>{{header}}</h2>
+<div>
+    <label>Ad:</label>
+    <input type="text" [(ngModel)]="name"/>
+    <p>{{name}}</p>
+    <button [disabled]="disabled" [style.background-color]="btnBgColor">Button</button>
+</div>
