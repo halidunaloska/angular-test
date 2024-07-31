@@ -6,3 +6,14 @@
     <p>{{name}}</p>
     <button [disabled]="disabled" [style.background-color]="btnBgColor">Button</button>
 </div>
+
+<ul>
+    <li *ngFor="let name of names;let i = index let isEven = even;">
+        <span *ngIf="isEven;" [ngStyle]="bgGreenStyle">{{i}} - {{name}}</span>
+        <span *ngIf="!isEven" [ngClass]="bgRedClass">{{i}} - {{name}}</span>     
+    </li>
+</ul>
+
+<div appTest color="red">
+    Test Directive
+</div>
