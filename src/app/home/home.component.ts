@@ -2,11 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TestDirective } from '../directives/test.directive';
+import { CustomIfDirective } from '../directives/custom-if.directive';
+import { CustomForDirective } from '../directives/custom-for.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, CommonModule, TestDirective ],
+  imports: [FormsModule, CommonModule, TestDirective, CustomIfDirective, CustomForDirective ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
