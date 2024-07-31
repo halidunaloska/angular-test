@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { TestDirective } from '../directives/test.directive';
 import { CustomIfDirective } from '../directives/custom-if.directive';
 import { CustomForDirective } from '../directives/custom-for.directive';
+import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, CommonModule, TestDirective, CustomIfDirective, CustomForDirective ],
+  imports: [FormsModule, CommonModule, TestDirective, CustomIfDirective, CustomForDirective, CustomPipePipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

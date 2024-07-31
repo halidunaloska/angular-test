@@ -23,5 +23,9 @@
 </div>
 
 <div *appCustomFor="names; let name; let index = index">
-    {{index}} Custom For Directive {{name}} 
+    {{index}} Custom For Directive {{name | uppercase}} 
 </div>
+
+<div>{{"1000" | currency}}</div>
+
+<div>Custom Slice Pipe {{"123456789" | customPipe: 2:7}}</div>
