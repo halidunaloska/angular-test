@@ -34,4 +34,7 @@ export class LifeCyleHooksComponent implements OnChanges, OnInit, DoCheck, After
   ngOnDestroy(): void {
     console.log("onDestroy") 
   }
+  viewChildFunc(){
+    console.log("i was called view child")
+  }
 }
